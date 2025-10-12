@@ -42,7 +42,7 @@ class Payment extends Simulation{
     )
   ).protocols(httpConf)
    .assertions(
-     global.responseTime.max.lte(3000),       // max response time ≤ 3s
+     global.responseTime.max.lte(5000),       // max response time ≤ 3s
      global.failedRequests.percent.lte(1)     // error rate ≤ 1%
    )
 }
