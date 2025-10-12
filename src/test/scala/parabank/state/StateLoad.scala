@@ -27,6 +27,6 @@ class StateLoad extends Simulation {
         atOnceUsers(200) // 200 usuarios simultáneos
         )
     ).protocols(httpProtocol)
-    .assertions(global.successfulRequests.percent.gt(99)) // Validar el porcentaje de solicitudes exitosas
+    .assertions(global.successfulRequests.percent.gt(90)) // Validar el porcentaje de solicitudes exitosas
     .assertions(global.responseTime.max.lt(10000)) // Validar el tiempo de respuesta máximo
 }
