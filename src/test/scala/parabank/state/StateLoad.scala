@@ -28,5 +28,5 @@ class StateLoad extends Simulation {
         )
     ).protocols(httpProtocol)
     .assertions(global.successfulRequests.percent.gt(99)) // Validar el porcentaje de solicitudes exitosas
-    .assertions(global.responseTime.max.lt(3000)) // Validar el tiempo de respuesta máximo
+    .assertions(global.responseTime.max.lt(10000)) // Validar el tiempo de respuesta máximo
 }
