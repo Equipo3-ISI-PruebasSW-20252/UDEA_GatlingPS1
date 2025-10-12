@@ -1,5 +1,5 @@
 package parabank
 
 object Data{
-    val url= "https://parabank.parasoft.com/parabank/services/bank"
+    val url= "https://para.testar.org/parabank/services/bank"
 }
