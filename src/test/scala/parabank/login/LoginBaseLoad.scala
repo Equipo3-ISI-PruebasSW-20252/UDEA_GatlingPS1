@@ -9,7 +9,7 @@ import parabank.login.LoginData._
 class LoginBaseLoad extends Simulation{
 
   // 1 Http Conf
-  val httpConf = http.baseUrl(url)
+  val httpConf = http.baseUrl(url) 
     .acceptHeader("application/json")
     //Verificar de forma general para todas las solicitudes
     .check(status.is(200))
