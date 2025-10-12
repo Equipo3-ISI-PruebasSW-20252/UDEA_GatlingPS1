@@ -27,5 +27,5 @@ class LoginBaseLoad extends Simulation{
   setUp(
     scn.inject(atOnceUsers(100))
   ).protocols(httpConf)
-   .assertions(global.responseTime.max.lte(3000))
+   .assertions(global.responseTime.max.lte(2000))
 }

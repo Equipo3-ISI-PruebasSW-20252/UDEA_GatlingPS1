@@ -1,0 +1,27 @@
+{
+  "simulation": "parabank.payment.Payment",
+  "simulationId": "payment",
+  "start": 1760300941581,
+  "description": "",
+  "scenarios": ["make payments simultaneously"],
+  "assertions": [
+{
+  "path": "Global",
+  "target": "max of response time",
+  "condition": "is less than or equal to",
+  "expectedValues": [3000.0],
+  "result": false,
+  "message": "Global: max of response time is less than or equal to 3000.0",
+  "actualValue": [7976.0]
+},
+{
+  "path": "Global",
+  "target": "percentage of failed events",
+  "condition": "is less than or equal to",
+  "expectedValues": [1.0],
+  "result": true,
+  "message": "Global: percentage of failed events is less than or equal to 1.0",
+  "actualValue": [0.0]
+}
+  ]
+}

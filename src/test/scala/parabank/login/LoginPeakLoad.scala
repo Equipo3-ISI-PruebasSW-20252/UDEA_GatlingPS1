@@ -28,5 +28,5 @@ class LoginPeakLoad extends Simulation{
     setUp(
     scn.inject(atOnceUsers(200))
   ).protocols(httpConf)
-  .assertions(global.responseTime.max.lt(10000))
+  .assertions(global.responseTime.max.lt(5000))
 }

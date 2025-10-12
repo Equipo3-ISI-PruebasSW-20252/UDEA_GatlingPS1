@@ -1,0 +1,18 @@
+{
+  "simulation": "parabank.login.LoginBaseLoad",
+  "simulationId": "loginbaseload",
+  "start": 1760300893369,
+  "description": "",
+  "scenarios": ["Login"],
+  "assertions": [
+{
+  "path": "Global",
+  "target": "max of response time",
+  "condition": "is less than or equal to",
+  "expectedValues": [2000.0],
+  "result": true,
+  "message": "Global: max of response time is less than or equal to 2000.0",
+  "actualValue": [1853.0]
+}
+  ]
+}
