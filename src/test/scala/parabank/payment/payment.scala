@@ -1,12 +1,9 @@
 package parabank.payment
-
 import io.gatling.core.Predef._
 import io.gatling.http.Predef._
 import parabank.Data._
 import parabank.payment.PaymentData._
-
 class Payment extends Simulation{
-
   // 1 Http Conf
   val httpConf = http.baseUrl(url)
     .acceptHeader("application/json")
